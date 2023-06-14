@@ -40,4 +40,4 @@ RUN set -ex \
 
 COPY --from=builder /go/bin/hysteria /usr/local/bin/hysteria
 
-ENTRYPOINT ["hysteria"]
+ENTRYPOINT ["hysteria -c /etc/hysteria/config.jason server"]
